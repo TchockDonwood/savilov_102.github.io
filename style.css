@@ -53,6 +53,7 @@ a {
 /*header*/
 .header {
   padding-left: 5%;
+  padding-bottom: 5%;
   display: flex;
   flex-direction: row;
   gap: 50px
@@ -74,7 +75,7 @@ a {
 }
 
 .nav a:hover {
-  color: #E0B44D;
+  color: rgba(211, 166, 94, 0.9);
 }
 
 /*main*/
@@ -86,7 +87,8 @@ a {
 }
 
 .description {
-  flex: 0.75;
+  flex: 0.5;
+  line-height: 300%;
 }
 
 .description img {
@@ -141,19 +143,23 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-start;
   border: 20px solid #ffffff;
+  min-width: 300px;
   min-height: 200px;
-  padding: 5px;
+  padding: 10px;
   border-image: url(images/frame.svg) 14 14 14 14 repeat;
 }
 
 .frame h3 {
-  margin: 1rem 0 0.5rem;
+  margin: 1rem 0 0.25rem;
   font-size: 1.75rem;
 }
 
 .frame p {
-  font-size: 1rem;
+  max-width: 18rem;
+  text-align: center;
+  font-size: 1.25rem;
   line-height: 1.4;
 }
 
@@ -215,8 +221,8 @@ a {
 
   background: radial-gradient(
     circle at var(--x, 50%) var(--y, 50%),
-    rgba(211, 198, 127, 0.1) 320px,
-    rgba(0, 0, 0, 0.85) 800px
+    rgba(211, 198, 127, 0.1) 500px,
+    rgba(0, 0, 0, 0.85) 1500px
   );
 
   animation: flicker 0.4s infinite alternate;
@@ -224,17 +230,25 @@ a {
 }
 
 @keyframes flicker {
-  0% { opacity: 0.97; }
+  0% { opacity: 0.85; }
+  50% { opacity: 0.9; }
   100% { opacity: 1; }
 }
 
 body::after {
   content: "";
-  position: fixed;
+  position:fixed;
   top: 0; left: 0;
   width: 100vw; height: 100vh;
-  background-image: url('/images/шумы.png');
+  background-image: url('/images/Indieground-Free-PhotocopyNoise-Textures-02.jpg');
   opacity: 0.7;
   mix-blend-mode: overlay;
   pointer-events: none;
+}
+
+.noize {
+  mask-image: url('/images/background-index.png');
+  mask-repeat: no-repeat;
+  mask-size: auto;
+  mask-position: center;
 }
