@@ -1,35 +1,127 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>"Без Плёнки" – Блог кинолюбителя</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Oranienbaum&display=swap" rel="stylesheet">
 </head>
+
 <body>
-<header class="header">
-    <a href="index.html"><img src="images/Лого.png" alt="Лого сайта" width="70" height="70"></a>
+  <header class="header">
+    <a href="index.html">
+        <img src="images/logotype-white.png" alt="Логотип сайта">
+    </a>
     <nav class="nav">
         <ul>
             <li><a href="./watchedList.html">Просмотренные</a></li>
             <li><a href="./topMovies.html">Топ фильмов</a></li>
             <li><a href="./topSeries.html">Топ сериалов</a></li>
-            <li><a href="./recommendations.html">Список рекомендаций</a></li>
         </ul>
     </nav>
-</header>
+  </header>
 
-<main class="main">
-    <h1>Всем привет!</h1>
-    <p>Тут будет краткое описание сайта, от кого и для кого он сделан</p>
-</main>
+  <main>
+    <section class="hero">
+      <h1>“НЕ ПРЕТЕНДУЕМ НА ИСТИНУ, ПРОСТО ЛЮБИМ КИНО.”</h1>
+      <div class="intro">
+        <div class="description">
+          <p>Этот блог — для тех, кто любит кино, но иногда чувствует себя немного потерянным. Здесь нет заумных терминов и снобизма, только честные разборы, живые обсуждения и попытки понять даже самое сложное кино.</p>
+          <p>Я такой же, как ты: смотрю, восхищаюсь, недоумеваю, спорю с экраном. Пишу не как критик, а как зритель — для таких же увлечённых, но не претендующих на всезнание.</p>
+          <p>Кино — это не только про гениев и шедевры, но и про эмоции, вопросы и диванные дискуссии. Давай разбираться в нём вместе!</p>
+        </div>
+        <div class="photo-frame">
+          <img src="/images/cat-on-camera.png"/>
+        </div>
+      </div>
+    </section>
 
-<aside class="aside">
-    <p>Тут будет полезная инфа для тех, кто хочет разбираться в фильмах</p>
-</aside>
+    <section class="info">
+      <h1>Полезная информация для будущих гиков</h1>
+      <div class="grid">
+        <div class="card">
+          <a target="_blank" href="https://www.youtube.com/@kinopoisk"><img src="/images/kinopoisk-icon.svg" alt="Логотип Кинопоиска" /></a>
+          <div class="frame">
+            <h3>Кинопоиск</h3>
+            <p>Канал для нормисов и для тех, кто только начинает познавать мир кинематографа.</p>
+          </div>
+        </div>
+        <div class="card">
+          <a target="_blank" href="https://www.youtube.com/@iamkungurov"><img src="/images/16na9-icon.png" alt="Логотип 16 на 9" /></a>
+          <div class="frame">
+            <h3>16 на 9</h3>
+            <p>Канал с проработанными около-документалками про кино, выходящими раз в несколько лет. Осторожно, затягивает!</p>
+          </div>
+        </div>
+        <div class="card">
+          <a target="_blank" href="https://www.youtube.com/@ZHUBAN"><img src="/images/anoir-icon.png" alt="Логотип Ануара" /></a>
+          <div class="frame">
+            <h3>ANOIR</h3>
+            <p>Мегабалдежные обзоры, просмотр которых начинается с обсуждения фильма, а заканчивается лекцией по философии.</p>
+          </div>
+        </div>
+        <div class="card">
+          <a target="_blank" href="https://www.youtube.com/@Nerdface"><img src="/images/chbu-icon.png" alt="Логотип ЧБУ" /></a>
+          <div class="frame">
+            <h3>ЧБУ</h3>
+            <p>Канал с фанатскими теориями для любителей рассматривать фильмы под разными углами.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<footer class="footer">
-    <a href="https://t.me/savilovsem"><img src="images/telegram.png" alt="ТГ"></a>
-    <a href="https://vk.com/atom__for__peace"><img src="images/vk.png" alt="ВК"></a>
-    <a href="https://github.com/TchockDonwood"><img src="images/github.png" alt="GitHub"></a>
-</footer>
+    <section class="books">
+      <h2>Полезные книги</h2>
+      <div class="book-list">
+        <div class="book-list-frame">
+          <a target="_blank" href="https://www.litres.ru/book/aleksandr-mitta/kino-mezhdu-adom-i-raem-147495/"><img src="/images/book-1.png" alt="Книга 1" /></a>
+          <a target="_blank" href="https://www.litres.ru/book/oleg-kurochkin/yazyk-kino-kak-stat-prodvinutym-zritelem-67774212/"><img src="/images/book-2.png" alt="Книга 2" /></a>
+          <a target="_blank" href="https://www.litres.ru/book/dzheff-smit/iskusstvo-kino-vvedenie-v-istoriu-i-teoriu-kinematografa-70569922/"><img src="/images/book-3.png" alt="Книга 3" /></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="social">
+      <div class="icon">
+        <a target="_blank" href="https://t.me/savilovsem"><img src="images/telegram.svg" alt="ТГ" /></a>
+      </div>
+      <div class="icon">
+        <a target="_blank" href="https://vk.com/atom__for__peace"><img src="images/vk.svg" alt="ВК" /></a>
+      </div>
+      <div class="icon">
+        <a target="_blank" href="https://github.com/TchockDonwood"><img src="images/github.svg" alt="GitHub" /></a>
+      </div>
+    </div>
+  </footer>
+  
+  <div class="spotlight-overlay"></div>
+  
+  <script>
+    const spotlight = document.querySelector('.spotlight-overlay');
+    let targetX = 50, targetY = 50;
+    let currentX = 50, currentY = 50;
+
+    document.addEventListener('mousemove', (e) => {
+      targetX = e.clientX;
+      targetY = e.clientY;
+    });
+
+    function animateSpotlight() {
+      currentX += (targetX - currentX) * 0.08;
+      currentY += (targetY - currentY) * 0.08;
+
+      spotlight.style.setProperty('--x', `${currentX}px`);
+      spotlight.style.setProperty('--y', `${currentY}px`);
+
+      requestAnimationFrame(animateSpotlight);
+    }
+
+    animateSpotlight();
+  </script>
+
 </body>
 </html>
