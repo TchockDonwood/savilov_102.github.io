@@ -6,13 +6,17 @@
     <link href="style.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Oranienbaum&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Oranienbaum&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet"/>
 </head>
 
 <body>
   <header class="header">
     <a href="index.html">
-        <img src="images/logotype-white.png" alt="Логотип сайта" class="noize" />
+      <div class="logo-container" id="logoContainer">
+        <img src="images/logo-single.svg" alt="Логотип сайта" class="logo-icon" />
+        <img src="images/logo-text.svg" alt="Текст логотипа" class="logo-text" id="logoText" />
+      </div>
     </a>
     <nav class="nav">
         <ul>
@@ -122,6 +126,37 @@
 
     animateSpotlight();
   </script>
+
+<script>
+  const logoWrapper = document.getElementById("logoContainer");
+  const logoText = document.getElementById("logoText");
+  const logoIcon = document.querySelector(".logo-icon");
+  
+  logoIcon.style.transform = "translateX(70px)";
+  
+  logoWrapper.addEventListener("mouseenter", () => {
+    logoText.classList.remove("animate__fadeOutLeft");
+    logoText.classList.add("animate__animated", "animate__fadeInLeft");
+    logoText.style.opacity = "1";
+    logoText.style.pointerEvents = "auto";
+    logoIcon.style.transform = "translateX(0px)";
+  });
+
+  logoWrapper.addEventListener("mouseleave", () => {
+    logoText.classList.remove("animate__fadeInRight");
+    logoText.classList.add("animate__fadeOutLeft");
+
+    logoIcon.style.transform = "translateX(70px)";
+
+    logoText.addEventListener("animationend", function handler(e) {
+      if (e.animationName === "fadeOutLeft") {
+        logoText.style.opacity = "0";
+        logoText.classList.remove("animate__animated", "animate__fadeOutLeft");
+        logoText.removeEventListener("animationend", handler);
+      }
+    });
+  });
+</script>
 
 </body>
 </html>
