@@ -1,78 +1,97 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <title>"Без Плёнки" – Блог кинолюбителя</title>
-    <link href="style.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Oranienbaum&display=swap" rel="stylesheet">
-</head>
+    <link href="style.css" rel="stylesheet" />
+    <link href="style2.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Oranienbaum&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
-  <header class="header">
-    <a href="index.html">
-        <img src="images/logotype-white.png" alt="Логотип сайта" class="noize" />
-    </a>
-    <nav class="nav">
+  <body>
+    <header class="header">
+      <a href="index.html">
+        <div class="logo-container" id="logoContainer">
+          <img
+            src="images/logo-single.svg"
+            alt="Логотип сайта"
+            class="logo-icon"
+          />
+          <img
+            src="images/logo-text.svg"
+            alt="Текст логотипа"
+            class="logo-text"
+            id="logoText"
+          />
+        </div>
+      </a>
+      <nav class="nav">
         <ul>
-            <li><a href="./watchedList.html">Просмотренные</a></li>
-            <li><a href="./topMovies.html">Топ фильмов</a></li>
-            <li><a href="./topSeries.html">Топ сериалов</a></li>
+          <li><a href="./watchedList.html">Просмотренные</a></li>
+          <li><a href="./topMovies.html">Топ фильмов</a></li>
+          <li><a href="./topSeries.html">Топ сериалов</a></li>
         </ul>
-    </nav>
-  </header>
+      </nav>
+    </header>
 
-<main class="main">
-    <section class="search">
+    <main class="main">
+      <section class="search"></section>
+      <div class="gallery">
+        <ul class="cards">
+          <li id="card">
+            <img
+              class="image"
+              src="https://avatars.mds.yandex.net/get-kinopoisk-image/4774061/0082531b-9541-452a-9a89-24bea6490cda/1920x"
+              draggable="false"
+            />
+          </li>
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+          <li>4</li>
+          <li>5</li>
+          <li>6</li>
+          <li>7</li>
+          <li>8</li>
+          <li>9</li>
+          <li>10</li>
+        </ul>
+      </div>
+    </main>
 
-    </section>
-
-    <div class="watched-list">
-        <div class="film-clip">
-            <img src="/images/film-clip.svg" alt="" class="noize" />
-            <div class="movie">
-
-            </div>
+    <footer>
+      <div class="social">
+        <div class="icon">
+          <a target="_blank" href="https://t.me/savilovsem"
+            ><img src="images/telegram.svg" alt="ТГ"
+          /></a>
+        </div>
+        <div class="icon">
+          <a target="_blank" href="https://vk.com/atom__for__peace"
+            ><img src="images/vk.svg" alt="ВК"
+          /></a>
+        </div>
+        <div class="icon">
+          <a target="_blank" href="https://github.com/TchockDonwood"
+            ><img src="images/github.svg" alt="GitHub"
+          /></a>
         </div>
       </div>
-    <ul>
-        <li>
-            <img src="" alt="Постер">
-            <h3>Название фильма</h3>
-            <h5>Оценка</h5>
-        </li>
-        <li>
-            <img src="" alt="Постер">
-            <h3>Название фильма</h3>
-            <h5>Оценка</h5>
-        </li>
-        <li>
-            <img src="" alt="Постер">
-            <h3>Название фильма</h3>
-            <h5>Оценка</h5>
-        </li>
-        <li>
-            <img src="" alt="Постер">
-            <h3>Название фильма</h3>
-            <h5>Оценка</h5>
-        </li>
-    </ul>
-</main>
+    </footer>
 
-<footer>
-    <div class="social">
-      <div class="icon">
-        <a target="_blank" href="https://t.me/savilovsem"><img src="images/telegram.svg" alt="ТГ" /></a>
-      </div>
-      <div class="icon">
-        <a target="_blank" href="https://vk.com/atom__for__peace"><img src="images/vk.svg" alt="ВК" /></a>
-      </div>
-      <div class="icon">
-        <a target="_blank" href="https://github.com/TchockDonwood"><img src="images/github.svg" alt="GitHub" /></a>
-      </div>
-    </div>
-  </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="scripts/infinitive_scroll_animation.js"></script>
 
-</body>
+    <script src="scripts/logo_animation.js"></script>
+  </body>
 </html>
