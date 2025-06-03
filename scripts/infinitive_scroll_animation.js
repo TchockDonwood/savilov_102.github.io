@@ -114,16 +114,15 @@ function buildSeamlessLoop(items, spacing) {
       )
       .fromTo(
         item,
-        { yPercent: 500 },
+        { yPercent: 450 },
         {
-          yPercent: -500,
+          yPercent: -450,
           duration: 1,
           ease: "none",
           immediateRender: false,
         },
         time
       );
-    i <= items.length && seamlessLoop.add("label" + i, time); // we don't really need these, but if you wanted to jump to key spots using labels, here ya go.
   }
 
   // here's where we set up the scrubbing of the playhead to make it appear seamless.
