@@ -1,48 +1,76 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <title>"Без Плёнки" – Мой топ фильмов</title>
-</head>
-<body>
-<header class="header">
-  <a href="index.html"><img src="images/Лого.png" alt="Лого сайта" width="70" height="70"></a>
-  <nav class="nav">
-    <ul>
-      <li><a href="./watchedList.html">Просмотренные</a></li>
-      <li><a href="./topMovies.html">Топ фильмов</a></li>
-      <li><a href="./topSeries.html">Топ сериалов</a></li>
-      <li><a href="./recommendations.html">Список рекомендаций</a></li>
-    </ul>
-  </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <title>"Без Плёнки" – Блог кинолюбителя</title>
+    <link href="style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Oranienbaum&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      rel="stylesheet"
+    />
+  </head>
 
-</header>
+  <body style="background-color: 0F0F0E;">
+    <header class="header" style="padding-bottom: 3%;">
+      <a href="index.html">
+        <div class="logo-container" id="logoContainer">
+          <img
+            src="images/logo-single.svg"
+            alt="Логотип сайта"
+            class="logo-icon"
+          />
+          <img
+            src="images/logo-text.svg"
+            alt="Текст логотипа"
+            class="logo-text"
+            id="logoText"
+          />
+        </div>
+      </a>
+      <nav class="nav">
+        <ul>
+          <li><a href="./watchedList.html">Просмотренные</a></li>
+          <li><a href="./topMovies.html">Топ фильмов</a></li>
+          <li><a href="./topSeries.html">Топ сериалов</a></li>
+        </ul>
+      </nav>
+    </header>
 
-<main class="main">
-  <ol>
-    <li>
-      <a href="сard.html"><img src="" alt="Постер"> <span>Название сериала</span></a>  <span>Метаданные</span> <span>Оценка</span>
-    </li>
-    <li>
-      <a href="сard.html"><img src="" alt="Постер"> <span>Название сериала</span></a>  <span>Метаданные</span> <span>Оценка</span>
-    </li>
-    <li>
-      <a href="сard.html"><img src="" alt="Постер"> <span>Название сериала</span></a>  <span>Метаданные</span> <span>Оценка</span>
-    </li>
-    <li>
-      <a href="сard.html"><img src="" alt="Постер"> <span>Название сериала</span></a>  <span>Метаданные</span> <span>Оценка</span>
-    </li>
-    <li>
-      <a href="сard.html"><img src="" alt="Постер"> <span>Название сериала</span></a>  <span>Метаданные</span> <span>Оценка</span>
-    </li>
-  </ol>
-</main>
+    <main>
+      <div class="error-wrapper">
+        <img src="images/404.png" class="error">
+      </div>
+    </main>
 
+    <footer>
+      <div class="social">
+        <div class="icon">
+          <a target="_blank" href="https://t.me/savilovsem"
+            ><img src="images/telegram.svg" alt="ТГ"
+          /></a>
+        </div>
+        <div class="icon">
+          <a target="_blank" href="https://vk.com/atom__for__peace"
+            ><img src="images/vk.svg" alt="ВК"
+          /></a>
+        </div>
+        <div class="icon">
+          <a target="_blank" href="https://github.com/TchockDonwood"
+            ><img src="images/github.svg" alt="GitHub"
+          /></a>
+        </div>
+      </div>
+    </footer>
 
-<footer class="footer">
-  <a href="https://t.me/savilovsem"><img src="images/telegram.png" alt="ТГ"></a>
-  <a href="https://vk.com/atom__for__peace"><img src="images/vk.png" alt="ВК"></a>
-  <a href="https://github.com/TchockDonwood"><img src="images/github.png" alt="GitHub"></a>
-</footer>
-</body>
+    <div class="spotlight-overlay"></div>
+    <script src="scripts/spotlight_effect.js"></script>
+
+    <script src="scripts/logo_animation.js"></script>
+  </body>
 </html>
