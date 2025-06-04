@@ -89,7 +89,7 @@ function buildSeamlessLoop(items, spacing) {
     item;
 
   // set initial state of items
-  gsap.set(items, { yPercent: 400, opacity: 0, scale: 0 });
+  gsap.set(items, { yPercent: 400, opacity: 0, scale: 0.25, filter: "blur(40px)" });
 
   // now loop through and create all the animations in a staggered fashion. Remember, we must create EXTRA animations at the end to accommodate the seamless looping.
   for (i = 0; i < l; i++) {
@@ -99,10 +99,11 @@ function buildSeamlessLoop(items, spacing) {
     rawSequence
       .fromTo(
         item,
-        { scale: 0, opacity: 0 },
+        { scale: 0.25, opacity: 0 },
         {
           scale: 1,
           opacity: 1,
+          filter: "blur(0px)",
           zIndex: 100,
           duration: 0.5,
           yoyo: true,
