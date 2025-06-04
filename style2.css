@@ -70,7 +70,7 @@
   mask-image: url(/images/stars.svg);
   mask-repeat: no-repeat;
   mask-size: auto 100%;
-  mask-position: center;
+  mask-position: left;
   align-self: flex-end;
 }
 
