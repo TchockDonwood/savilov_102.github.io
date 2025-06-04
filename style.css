@@ -57,6 +57,7 @@ a {
 
 /*header*/
 .header {
+  width: 100vw;
   padding-left: 5%;
   padding-bottom: 5%;
   display: flex;
