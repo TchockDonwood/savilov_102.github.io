@@ -374,6 +374,10 @@ a {
   height: 65%;
 }
 
+.spacer {
+  height: 30vh;
+}
+
 /*effects*/
 .spotlight-overlay {
   position: fixed;
