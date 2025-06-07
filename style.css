@@ -345,6 +345,35 @@ a {
   height: 60%;
 }
 
+/*topMovies*/
+.ticket-container {
+  position: relative;
+  width: fit-content;
+  margin: 100px auto;
+  display: flex;
+  align-items: center;
+}
+
+.ticket-left,
+.ticket-right {
+  display: block;
+  width: auto;
+  height: auto;
+  max-height: 400px; /* по желанию */
+  transition: transform 0.3s ease;
+}
+
+.welcome-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.welcome {
+  background-repeat: no-repeat;
+  width: 65%;
+  height: 65%;
+}
+
 /*effects*/
 .spotlight-overlay {
   position: fixed;

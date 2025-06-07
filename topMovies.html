@@ -1,48 +1,94 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>"Без Плёнки" – Мой топ фильмов</title>
-</head>
-<body>
-<header class="header">
-    <a href="index.html"><img src="images/Лого.png" alt="Лого сайта" width="70" height="70"></a>
-    <nav class="nav">
+    <link href="style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Oranienbaum&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body style="height: 200vh;background-color: #010101;">
+    <header class="header" style="padding-bottom: 3%;">
+      <a href="index.html">
+        <div class="logo-container" id="logoContainer">
+          <img
+            src="images/logo-single.svg"
+            alt="Логотип сайта"
+            class="logo-icon"
+          />
+          <img
+            src="images/logo-text.svg"
+            alt="Текст логотипа"
+            class="logo-text"
+            id="logoText"
+          />
+        </div>
+      </a>
+      <nav class="nav">
         <ul>
-            <li><a href="./watchedList.html">Просмотренные</a></li>
-            <li><a href="./topMovies.html">Топ фильмов</a></li>
-            <li><a href="./topSeries.html">Топ сериалов</a></li>
-            <li><a href="./recommendations.html">Список рекомендаций</a></li>
+          <li><a href="./watchedList.html">Просмотренные</a></li>
+          <li><a href="./topMovies.html">Топ фильмов</a></li>
+          <li><a href="./topSeries.html">Топ сериалов</a></li>
         </ul>
-    </nav>
+      </nav>
+    </header>
 
-</header>
+    <main class="main">
+      <div class="welcome-wrapper">
+        <img src="images/welcome.png" class="welcome">
+      </div>
 
-<main class="main">
-    <ol>
-        <li>
-            <a href="сard.html"><img src="" alt="Постер"> <span>Название фильма</span></a>  <span>Метаданные</span> <span>Оценка</span>
-        </li>
-        <li>
-            <a href="сard.html"><img src="" alt="Постер"> <span>Название фильма</span></a>  <span>Метаданные</span> <span>Оценка</span>
-        </li>
-        <li>
-            <a href="сard.html"><img src="" alt="Постер"> <span>Название фильма</span></a>  <span>Метаданные</span> <span>Оценка</span>
-        </li>
-        <li>
-            <a href="сard.html"><img src="" alt="Постер"> <span>Название фильма</span></a>  <span>Метаданные</span> <span>Оценка</span>
-        </li>
-        <li>
-            <a href="сard.html"><img src="" alt="Постер"> <span>Название фильма</span></a>  <span>Метаданные</span> <span>Оценка</span>
-        </li>
-    </ol>
-</main>
+      <div class="ticket-container">
+      <img src="images/top-one-left.png" alt="Левая часть билета" class="ticket-left" />
+      <img src="images/top-one-right.png" alt="Правая часть билета" class="ticket-right" />
+      </div>
 
+      <div class="ticket-container">
+        <img src="images/top-two-left.png" alt="Левая часть билета" class="ticket-left" />
+        <img src="images/top-two-right.png" alt="Правая часть билета" class="ticket-right" />
+      </div>
 
-<footer class="footer">
-    <a href="https://t.me/savilovsem"><img src="images/telegram.png" alt="ТГ"></a>
-    <a href="https://vk.com/atom__for__peace"><img src="images/vk.png" alt="ВК"></a>
-    <a href="https://github.com/TchockDonwood"><img src="images/github.png" alt="GitHub"></a>
-</footer>
-</body>
+      <div class="ticket-container">
+        <img src="images/top-three-left.png" alt="Левая часть билета" class="ticket-left" />
+        <img src="images/top-three-right.png" alt="Правая часть билета" class="ticket-right" />
+      </div>
+    </main>
+
+    <footer>
+      <div class="social" style="justify-self: flex-start;">
+        <div class="icon">
+          <a target="_blank" href="https://t.me/savilovsem"
+            ><img src="images/telegram.svg" alt="ТГ"
+          /></a>
+        </div>
+        <div class="icon">
+          <a target="_blank" href="https://vk.com/atom__for__peace"
+            ><img src="images/vk.svg" alt="ВК"
+          /></a>
+        </div>
+        <div class="icon">
+          <a target="_blank" href="https://github.com/TchockDonwood"
+            ><img src="images/github.svg" alt="GitHub"
+          /></a>
+        </div>
+      </div>
+    </footer>
+
+    <div class="spotlight-overlay"></div>
+    <script src="scripts/spotlight_effect.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="scripts/ticket_animation.js"></script>
+
+    <script src="scripts/logo_animation.js"></script>
+  </body>
 </html>
