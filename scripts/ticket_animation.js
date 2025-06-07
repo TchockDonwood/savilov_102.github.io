@@ -7,7 +7,7 @@ document.querySelectorAll('.ticket-container').forEach((ticket, i) => {
   gsap.timeline({
     scrollTrigger: {
       trigger: ticket,
-      start: `top ${60 + i * 10}%`, // ближе к верху и с небольшим сдвигом для каждого
+      start: `top ${60 + i * 10}%`,
       end: "bottom 40%",
       scrub: true,
     }
